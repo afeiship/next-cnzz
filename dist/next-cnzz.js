@@ -11,9 +11,8 @@
         }
         this.$track = global._czc;
       },
-      push: function(){
-        var args = nx.toArray( arguments );
-        this.$track.push( args );
+      push: function(inArray){
+        this.$track.push( inArray );
         return this.$track;
       },
       event: function(inOptions){
