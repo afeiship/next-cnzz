@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <button class="test-btn">Test</button>
+  <script src="https://s19.cnzz.com/z_stat.php?id=1262437501&web_id=1262437501" language="JavaScript"></script>
+  <script src="../node_modules/next-js-core2/dist/next-js-core2.js"></script>
+  <script src="../src/next-cnzz.js"></script>
+  <script>
+    var $track = new nx.Cnzz();
+    $track.event({
+      category: 'category',
+      action: 'test',
+      label:'test'
+    });
+
+    $track.pageView({
+      content_url:''
+    });
+
+    $track.push(['xx','yy','zz'])
+  </script>
+</body>
+</html>
